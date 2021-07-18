@@ -1,19 +1,13 @@
 import React, {useState} from 'react';
-import axios from 'axios';
 import * as S from './styled'
-import {useHistory} from 'react-router-dom';
 
 function App(props) {
   const [usuario, setUsuario] = useState('');
   const [erro, setErro] = useState(false);
 
   function cadastro(){
-    let user = {usuario};
-    let msg = '';
     localStorage.setItem('user', JSON.stringify(usuario));
-    let userString = localStorage.getItem('user');
-    let pessoaObj = JSON.parse(userString);
-    console.log(pessoaObj.nome); 
+    let userString = localStorage.getItem('user'); 
   }
 
   return (
