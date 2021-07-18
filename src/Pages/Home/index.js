@@ -3,11 +3,9 @@ import * as S from './styled'
 
 function App(props) {
   const [usuario, setUsuario] = useState('');
-  const [erro, setErro] = useState(false);
 
   function cadastro(){
     localStorage.setItem('user', JSON.stringify(usuario));
-    let userString = localStorage.getItem('user'); 
   }
 
   return (
@@ -46,7 +44,6 @@ function App(props) {
         <S.Input name="usuario" id="usuario" className="usuarioInput" value={usuario} placeholder="E-mail" onChange={e => setUsuario(e.target.value)}/>
         <S.Button type="button" id="button1" onClick={cadastro}>cadastrar</S.Button>
       </S.Content>
-      {erro ? <S.ErrorMsg>Ocorreu um erro! Tente novamente</S.ErrorMsg> : ''}
     </S.HomeContainer>
     </>
   );
