@@ -135,7 +135,7 @@ border: 5px solid black;
 `;
 
 export const ListPreco=styled.li`
-background: #ff6347 ;
+background: black ;
 color: #fff;
 font-size: 1em;
 text-align: center;
@@ -162,6 +162,21 @@ box-shadow: inset 0 0 1em gold;
 cursor: pointer;
 `;
 
+export const BlackFriday = styled.div`
+width: 100vw;
+display: flex;
+align-items: center;
+justify-content: center;
+background: black;
+border: 2px red;
+`;
+
+export const TextoPrecoPromo = styled.text`
+font-size: 2.5em;
+color: #f5f5f5;
+font-family: sans-serif;
+text-decoration: line-through
+`;
 
 
 

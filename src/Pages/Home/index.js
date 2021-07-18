@@ -21,6 +21,9 @@ function App(props) {
         <S.ListMenu>Roupas Íntimas</S.ListMenu>
         <S.ListMenu>Acessórios</S.ListMenu>
     </S.List>
+    <S.BlackFriday>
+      <S.HeaderPrincipal>Especial Black Friday!</S.HeaderPrincipal>
+    </S.BlackFriday>
     <S.ProductContainer>
         <p><S.Imagens src="https://svgshare.com/i/ZK2.svg" class="logo" /></p>
         <p><S.Imagens src="https://svgshare.com/i/ZHt.svg" class="logo"/></p>
@@ -30,6 +33,11 @@ function App(props) {
         <S.ListItem><S.Texto>Camiseta preta algodão 100%</S.Texto></S.ListItem>
         <S.ListItem><S.Texto>Shorts verde elastano</S.Texto></S.ListItem>
         <S.ListItem><S.Texto>Tênis meia preto (tamanhos até 45)</S.Texto></S.ListItem>
+    </S.ListProduct>
+    <S.ListProduct>
+        <S.ListPreco><S.TextoPrecoPromo>R$30,00</S.TextoPrecoPromo></S.ListPreco>
+        <S.ListPreco><S.TextoPrecoPromo>R$65,00</S.TextoPrecoPromo></S.ListPreco>
+        <S.ListPreco><S.TextoPrecoPromo>R$275,00</S.TextoPrecoPromo></S.ListPreco>
     </S.ListProduct>
     <S.ListProduct>
         <S.ButtonBuy type="button" id="button2">R$15,99</S.ButtonBuy>
